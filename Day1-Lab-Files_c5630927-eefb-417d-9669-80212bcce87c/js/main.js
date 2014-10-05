@@ -43,12 +43,15 @@ window.onload=function(){
 
 	var ctx = theCanvas.getContext("2d");
 
+	//Checks if ctx exist
 	if(ctx != null){
 
+		// Styles 
 		ctx.strokeStyle = "black";
 		ctx.fillStyle = "blue";
 		ctx.lineWidth = 5;
 
+		//drawing rect and stroke
 		ctx.fillRect(0,0,100,125);
 		ctx.strokeRect(0,0,100,125);
 
@@ -79,16 +82,20 @@ Use the arc method
 
 	var ctx2 = theCanvas2.getContext("2d");
 
+
+	//variables to draw circle 
 	var degrees = 360;
 	var radians = (Math.PI/180)*degrees;
 
 	if(ctx2 != null){
 
+		//Styles
 		ctx2.strokeStyle = "black";
 		ctx2.fillStyle= "rgba(255,0,0,.5)";
 		ctx2.lineWidth = 5;
 
 
+		//Drawing the circle
 		ctx2.beginPath();
 		ctx2.arc(50,50,50,radians,degrees);
 		ctx2.stroke();
@@ -117,8 +124,12 @@ Height and width and color are up to you.
 
 	if(ctx3 != null){
 
+
+			//Styles 
 			ctx3.strokeStyle = "black";
 			ctx3.lineWidth = 5;
+
+			//First TRY 
 
 			// ctx3.beginPath();
 			// ctx3.moveTo(100,100);
@@ -133,7 +144,7 @@ Height and width and color are up to you.
 			// ctx3.lineTo(150,160);
 
 
-
+			//Drawing star
 			ctx3.beginPath();
 			ctx3.moveTo(100,100);
 			ctx3.lineTo(150,50);
@@ -178,6 +189,7 @@ Do not overlap any other object.
 
 	if(ctx4 != null){
 
+		//ctx Drawing st
 		ctx4.strokeStyle = "black";
 		ctx4.fillStyle = "purple";
 
