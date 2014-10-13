@@ -51,6 +51,8 @@ window.onload = function() {
     
     function tester(){
         console.log("Animation is working!");
+
+        
         
     }
     
