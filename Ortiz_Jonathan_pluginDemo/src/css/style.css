@@ -1,0 +1,51 @@
+header{
+
+	width:100%;
+	background-color:#FFD87D;
+}
+h1{
+
+	margin-top:0;
+	text-align:center;
+}
+ul{
+
+	padding-left:0px;
+}
+ul li{
+
+	margin-top:0px;
+}
+.nav-primary{
+
+	margin-top:80px
+	
+}
+.nav-primary li a{
+
+	color:white;
+	display:block;
+	text-decoration:none;
+
+
+
+}
+.nav-primary li{
+
+	font-size:24px;
+	width:100%;
+	list-style:none;
+	text-align: center;
+
+	
+
+
+}
+.nav-primary li a:hover{
+
+	background-color:green;
+
+	
+
+
+}

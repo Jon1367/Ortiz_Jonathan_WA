@@ -3,11 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Pure Drawer</title>
+        <title>plugin Demo</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="stylesheet" href="css/pure-drawer.css"/>
+        <link rel="stylesheet" href="assets/css/pure-drawer.css"/>
+        <link rel="stylesheet" href="src/css/style.css">
     </head>
     <body>
         <div class="pure-container" data-effect="pure-effect-1">
@@ -15,20 +16,23 @@
             <label class="pure-toggle-label" for="pure-toggle-left" data-toggle-label="left">+</label>
 
             <nav class="pure-drawer" data-position="left">
-                <p style="padding: 100px 20px; margin: 0;">Insert your off-canvas content here</p>
-
-
-                <a href="sfsadfsfs">Home</a>
-                <h1>Home</h1>
+                <ul class="nav-primary">
+                
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index2.html">page2</a></li>
+                    
+                </ul>
             </nav>   
             
             <div class="pure-pusher-container">
-                <div class="pure-pusher">
-                    <p style="width: 300px; margin: 100px auto;">Insert your main content here</p>
+
+                    <header>
+                        <h1>Welcome to page 2</h1>
+                    </header>
+
                 </div>
+                <label class="pure-overlay" for="pure-toggle-left" data-overlay="left"></label> 
             </div>
-            
-            <label class="pure-overlay" for="pure-toggle-left" data-overlay="left"></label> 
         </div>
     </body>
 </html>
