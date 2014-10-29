@@ -28,6 +28,9 @@ window.onload = function() {
     
     
     function tick(e){
+
+
+        
         //Shake the ship
         //ship.x = centerX + (Math.random()-.5) *50;
         //ship.y = centerY + Math.random() * 20;

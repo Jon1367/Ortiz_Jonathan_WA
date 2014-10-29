@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.icons #twitter{
+
+		background-image:url("../images/socailIcons.png");
+		background-repeat:no-repeat;
+		display:block;
+		height:32px;
+		width:32px;
+		float:left;
+		background-position: 0px 0px;
+}
+.icons #twitter:hover{
+
+	background-position:0px -32px;
+
+}
+.icons #facebook{
+
+		background-image:url("../images/socailIcons.png");
+		background-repeat:no-repeat;
+		display:block;
+		height:32px;
+		width:32px;
+		float:left;
+		background-position: -32px 0px;
+}
+.icons #twitter:hover{
+
+
+}
+

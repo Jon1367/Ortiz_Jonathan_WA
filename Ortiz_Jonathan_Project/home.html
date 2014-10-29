@@ -3,35 +3,44 @@
 <head>
 	<meta charset="UTF-8">
 	<title>home</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Cantata+One|Khand|Cherry+Swash|Oswald' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Cantata+One|Khand|Cherry+Swash|Oswald' rel='stylesheet' type='text/css'/>
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'/>
+	<link href="css/lightbox.css" rel="stylesheet" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/lightbox.min.js"></script>
+	<script type="text/javascript" src="js/Chart.js"></script>
+	<script type="text/javascript" src="js/canvas.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	
 </head>
 <body>
 
 	<nav>
 			<ul id="info" class="right">
+
 				<a href="" class="nav right"><h3>CheckOut</h3></a>
 				<a href="" class="nav right"><h3>Chart (0)</h3></a>
 				<a href="" class="nav right"><h3>About</h3></a>
 				<a href="" class="nav right"><h3>Contact</h3></a>
-				<a href="" class="nav right"><h3>Contact</h3></a>
-				
-
 
 			</ul>
+
 	</nav>
 	
 		<header>
+
 			<div id="logo" class="left">
-				<h1><strong>D</strong>esigns <strong>213</strong></h1>
+				<h1><strong>D</strong>esigns <strong id="numbers">213</strong></h1>
 				
 			</div>
 
 		
 			<div id="searchSection" class="right clear">
 		
-					<button id="searchBtn"class="right">Search</button>
+			<button id="searchBtn" class="right">Search</button>
 					<input type="text" name="search" class="right" placeholder="search"/>
 				
 			</div><!-- End of search section -->
@@ -45,34 +54,60 @@
 				<a href="" class="category"><li>Guys</li></a>
 				<a href="" class="category"><li>Girls</li></a>
 				<a href="" class="category"><li>Discounts</li></a>
-				<a href="" class="category"><li>Guys</li></a>
-			</ul>
+				<a href="" class="category"><li>Funny</li></a>
+				<a href="" class="category"><li>quotes</li></a>
+				<a href="" class="category"><li>Art</li></a>
+				<a href="" class="category"><li>memes</li></a>
+			</ul>		
+		<h1 id="pie chart">percent catgory most sold</h1>
+		<canvas id="canvas3" class="clear" height="200" width="300"></canvas>
 		</aside>
 		<section id="gallery">
-					<h2>Gallery</h2>
+			<h2 id="gHeader">Gallery</h2>
 			<div class="container">
-				<div class="imageContainer left ">box1</div>
-				<div class="imageContainer left">box1</div>
-				<div class="imageContainer left">box</div>
-			</div>
 
-			<div class="container clear">
-				<div class="imageContainer left ">box1</div>
-				<div class="imageContainer left">box1</div>
-				<div class="imageContainer left">box</div>
-			</div>
+				<ul clear="clear">
 
+					<li class="spacing"><a href="img/shirt1.png" data-lightbox="group1" data-title="$2.99"><img class="example-image" src="img/shirt1.png" width="180" height="180" alt=""/></a></li>
+						
+					<li class="spacing"><a href="img/shirt4.jpg" data-lightbox="group1" data-title="$7.99"><img class="example-image" src="img/shirt4.jpg" width="180" height="180" alt=""/></a></li>
+						
 
-			<div class="container clear">
-				<div class="imageContainer left ">box1</div>
-				<div class="imageContainer left">box1</div>
-				<div class="imageContainer left">box</div>
-			</div>
+					<li class="spacing"><a href="img/shirt8.jpg" data-lightbox="group1" data-title="$9.99"><img class="example-image" src="img/shirt8.jpg" width="180" height="180" alt=""/></a></li>
+
+				</ul>
+				<ul class="clear">
+
+					<li class="spacing"><a href="img/shirt3.jpg" data-lightbox="group1" data-title="$12.99"><img class="example-image" src="img/shirt3.jpg" width="180" height="180" alt=""/></a></li>
+						
+					<li class="spacing"><a href="img/shirt5.jpg" data-lightbox="group1" data-title="$15.99"><img class="example-image" src="img/shirt5.jpg" width="180" height="180" alt=""/></a></li>
+						
+
+					<li class="spacing"><a href="img/shirt6.jpg" data-lightbox="group1" data-title="$5.99"><img class="example-image" src="img/shirt6.jpg" width="180" height="180" alt=""/></a></li>
+
+				</ul>
+				<ul class="clear">
+
+					<li class="spacing"><a href="img/shirt7.jpg" data-lightbox="group1" data-title="$16.99"><img class="example-image" src="img/shirt7.jpg" width="180" height="180" alt=""/></a></li>
+						
+					<li class="spacing"><a href="img/shirt2.jpg" data-lightbox="group1" data-title="$24.99"><img class="example-image" src="img/shirt2.jpg" width="180" height="180" alt=""/></a></li>
+						
+
+					<li class="spacing"><a href="img/shirt3.jpg" data-lightbox="group1" data-title="$15.99"><img class="example-image" src="img/shirt3.jpg" width="180" height="180" alt=""/></a></li>
+
+				</ul>
+				
+		
 				
 				
 		</section>
-		
+
+		<h1 id="lheader">The Top selling Shirts</h1>
+		<canvas id="canvas2" class="Chart" height="200" width="800"></canvas>
 
 	</div><!-- End of wrapper section -->
+	
+
+
 </body>
 </html>

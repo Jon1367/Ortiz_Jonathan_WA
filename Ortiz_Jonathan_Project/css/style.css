@@ -2,14 +2,15 @@
 
 	colors
 
-	purple: #7F3F98
-	green:  #67D51A
-	new purple:#8C4EC4;
+	purple:#6920B0;;
 
 	fronts
 
 	font-family: 'Cherry Swash', cursive;
 	font-family: 'Poiret One', cursive;
+	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Kalam', cursive;
 
 */
 body{
@@ -47,13 +48,14 @@ body{
 header{
 
 	width:960px;
+
 	height:40px;
 	margin:0 auto;
 }
 nav{
 	
 	width:960px;
-	background-color:#3D3D3D;
+	background-color:#7839C9;
 	overflow:hidden;
 	margin:0 auto;
 	margin-top:30px;
@@ -62,15 +64,20 @@ nav{
 
 }
 h1{
-	color:#67D51A;
+	color:#4A96FF;
 	font-size:46px;
-	font-family: 'Cherry Swash', cursive;
+	font-family: 'Raleway', sans-serif;
+	font-weight:200;
 	letter-spacing:2px;
+	cursor:pointer;
 }
 h1 > strong{
 
 	color:#7F3F98;
-	font-size:60px;
+	font-size:50px;
+	font-weight:200;
+	font-family: 'Raleway', sans-serif;
+
 }
 h3{
 	margin-top:0px;
@@ -79,6 +86,35 @@ h3{
 h1{
 	margin-left:0px;
 	margin-bottom:0;
+
+}
+.spacing{
+
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#gHeader{
+
+	
+	font-size:46px;
+	font-style:italic;
+	font-family: 'Cherry Swash', cursive;
+	letter-spacing:5px;
+
+}
+#lheader{
+
+	text-align:center;
+}
+#numbers{
+
+	color:#7F3F98;
+	font-size:20px;
+	line-height:25px;
+	font-weight:200;
+	font-family: 'Raleway', sans-serif;
+	display:none;
+
 
 }
 .nav{
@@ -113,12 +149,18 @@ h1{
 }
 .category:hover{
 
-	background-color:#4E8FF7;
+	background-color:#7839C9;
+
+}
+ul li{
+
+	display:inline-block;
 }
 ul a:hover{
 
-	background-color:#787878;
-	border-radius:5px;
+		background-color:#8A58E8;
+		border-radius:5px;
+
 
 }
 ul{
@@ -171,7 +213,7 @@ aside ul li{
 #gallery{
 
 	width:640px;
-	border: 1px solid black;
+	height:800px;
 	float:left;
 	margin-top:20px;
 	margin-left:10px;
@@ -186,20 +228,17 @@ section h2{
 	color:#955DD9;
 
 }
-.imageContainer{
-
-	width:150px;
-	height:150px;
-	border:2px solid black;
-	margin-left:10px;
-	margin-right:10px;
-}
 .container{
 
 	width:550px;
 	height:200px;
 	margin:0 auto;
 	
+
+}
+#canvas2{
+
+	margin-left:100px;
 
 }
 /*========== Wraper Section ==============*/
